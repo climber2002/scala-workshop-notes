@@ -111,7 +111,7 @@ matchTest(3)  // returns other
 matchTest(1)  // returns one
 ```
 
-### Matching on case classes
+### Matching on case classes and objects
 
 ```
 trait Notification
@@ -120,12 +120,16 @@ case class Email(sender: String, title: String, body: String) extends Notificati
 
 case class SMS(caller: String, message: String) extends Notification
 
+case object SpecialNotification extends Notification
+
 def showNotification(notification: Notification): String = {
   notification match {
     case Email(sender, title, _) =>
       s"You got an email from $sender with title: $title"
     case SMS(number, message) =>
       s"You got an SMS from $number! Message: $message"
+    case SpecialNotification =>
+      s"Oh, it's THE special notification"
   }
 }
 val someSms = SMS("12345", "Are you there?")
