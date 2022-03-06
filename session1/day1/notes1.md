@@ -27,7 +27,7 @@ def add(a: Int, b: Int): Int = a + b
 
 def add(a: Int, b: Int): Int = { a + b } 
 
-val add2 = (a: Int, b: Int) => a + b
+val add2 = (a: Int, b: Int): Int => a + b
 ```
 
 - if the implementation is only one expression, () could be omitted
