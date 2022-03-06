@@ -6,7 +6,7 @@ class User
 val user1 = new User
 ```
 
-```
+```scala
 class Point(var x: Int, var y: Int) {
 
   def move(dx: Int, dy: Int): Unit = {
@@ -23,17 +23,17 @@ println(point1.x)  // 2
 println(point1)  // prints (2, 3)
 ```
 
-```
+```scala
 class Name(val firstName: String, val lastName: String)
 ```
 
 ## Traits
 
-```
+```scala
 import scala.collection.mutable.ArrayBuffer
 
 trait Pet {
-  val name: String // getter
+  def name: String // getter
   
   def speak: String = "Yo"
 }
@@ -57,7 +57,7 @@ animals.foreach(pet => println(pet.name))
 
 ## Singleton objects
 
-```
+```scala
 object aaa extends Name("aaa", "bbb")
 ```
 

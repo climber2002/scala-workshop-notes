@@ -26,6 +26,8 @@ s"The number is $x"
 def add(a: Int, b: Int): Int = a + b 
 
 def add(a: Int, b: Int): Int = { a + b } 
+
+val add2 = (a: Int, b: Int) => a + b
 ```
 
 - if the implementation is only one expression, () could be omitted
@@ -84,6 +86,10 @@ def compare(a: Int, b: Int): Int = {
 ## Tuple
 
 (1, "two")
+
+## Unit
+
+Unit
 
 ## Show how to run test in Intellij
 

@@ -22,6 +22,8 @@ Nil.::(2)
 List(2, 3) :+ 4
 ```
 
+## List is immutable
+
 ## Pattern match
 
 ```
@@ -60,6 +62,12 @@ def double(l: List[Int]): List[Int] = l.map(i => i * 2)
 
 ```
 def flatten(l: List[List[Int]]): List[Int] = l.flatten
+```
+
+Can you implement map using pattern matching?
+
+```
+def myMap[A, B](l: List[A], func: A => B): List[B] = ???
 ```
 
 ## foldLeft
